@@ -11,13 +11,13 @@ print (matcher)
 #total occurence = 3
 #first time :0,Second time:3,third time:5
 count = 0
-matcher = re.finditer('ab','abaababa')
+matcher = re.finditer('aba','abaababa')
 for match in matcher:
 	count+=1
 	print('match is available at start index',match.start())
 	print('match is available at end index',match.end())
 	print('match is available at group',match.group())
-print('the number of occurences is',count)
+print('The number of occurences is',count)
 
 
 
