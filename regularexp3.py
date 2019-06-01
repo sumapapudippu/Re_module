@@ -6,7 +6,7 @@ import re
 #[a-zA-z0-9]
 #\s --> space char
 #\S --> Except space char ,\d,\D,\w,\W, . --> any char
-matcher = re.finditer('[^ab]','a7b@k9z')
+matcher = re.finditer('[^\w]','a7b@k9z')
 for m in matcher:
 	print(m.start(),'......',m.group())
 
