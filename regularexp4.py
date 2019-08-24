@@ -14,7 +14,7 @@ else:
 s = input('enter pattern to check')
 m = re.search(s,'abcdefgh')	
 if m! = None:
-	print('Match is not available')
+	print('Match is available')
 	print('First Occurence with start index:{} and end index{}'.format(m.start(),m.end()))
 else:
 	print('full string not matched')
